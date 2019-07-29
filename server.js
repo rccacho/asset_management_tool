@@ -13,6 +13,8 @@ app.use(bodyParser.urlencoded({
 // serve static files from public folder
 app.use(express.static(__dirname + '/public'));
 
+// require models and controllers directory
+var db = require('./models');
 var controllers = require('./controllers');
 
 
