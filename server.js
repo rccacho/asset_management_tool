@@ -38,11 +38,11 @@ app.get('/', function homepage (req, res) {
 
 app.get('/api', controllers.api.index); 
 
-// app.get('/api/user', controllers.user.index);   
-// app.get('/api/user/:id', controllers.user.show);  
-// app.post('/api/user', controllers.user.create);   
-// app.delete('/api/user/:id', controllers.user.destroy);  
-// app.put('/api/user/:id', controllers.user.update);  
+app.get('/api/users', controllers.users.index);   
+// app.get('/api/users/:id', controllers.users.show);  
+// app.post('/api/users', controllers.users.create);   
+// app.delete('/api/users/:id', controllers.users.destroy);  
+// app.put('/api/users/:id', controllers.users.update);  
 
 // app.get('/api/device', controllers.device.index);   
 // app.get('/api/device/:id', controllers.device.show);  
