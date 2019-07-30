@@ -7,7 +7,8 @@ var UserSchema = new Schema({
   email: String,
   password: String,
   location: String,
-  brand: String
+  brand: String,
+  admin: Boolean
 });
 
 var User = mongoose.model('User', UserSchema);
