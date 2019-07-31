@@ -17,7 +17,7 @@ $(document).ready(function() {
   // make a GET request for all users
   $.ajax({
     method: 'GET',
-    url: '/api/user',
+    url: '/api/users',
     success: handleSuccess,
     error: handleError
   });
@@ -27,7 +27,7 @@ $(document).ready(function() {
 function handleSuccess(json) {
   console.log('SUCCESS');
   users = json;
-  render();
+  // render();
 }
 
 function handleError(xhr, ajaxOptions, thrownError) {

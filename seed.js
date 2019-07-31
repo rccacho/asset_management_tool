@@ -29,3 +29,5 @@ sampleDevices.push({
   charged: true,
   working: true
 })
+
+console.log('seed.js is running');
